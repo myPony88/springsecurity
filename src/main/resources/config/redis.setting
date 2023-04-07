@@ -1,0 +1,26 @@
+#-------------------------------------------------------------------------------
+# Redis客户端配置样例
+# 每一个分组代表一个Redis实例
+# 无分组的Pool配置为所有分组的共用配置，如果分组自己定义Pool配置，则覆盖共用配置
+# 池配置来自于：https://www.cnblogs.com/jklk/p/7095067.html
+#-------------------------------------------------------------------------------
+
+#----- 默认（公有）配置
+# 地址，默认localhost
+host = localhost
+# 端口，默认6379
+port = 6379
+# 超时，默认2000
+timeout = 2000
+# 连接超时，默认timeout
+connectionTimeout = 2000
+# 读取超时，默认timeout
+soTimeout = 2000
+# 密码，默认无
+password = 12345
+# 数据库序号，默认0
+database = 0
+# 客户端名，默认"Hutool"
+clientName = Hutool
+# SSL连接，默认false
+ssl = false;
